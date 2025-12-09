@@ -1,0 +1,265 @@
+
+.page[data-v-5a559478] {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #f6f6f6;
+}
+
+/* 消息区 */
+.messages[data-v-5a559478] {
+  flex: 1;
+  padding: 16px 14px 120px;
+  background: #f6f6f6;
+}
+
+/* 单条消息 */
+.message[data-v-5a559478] {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  max-width: 78%;
+}
+.message.me[data-v-5a559478] {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+.message.them[data-v-5a559478] {
+  align-self: flex-start;
+  align-items: flex-start;
+}
+
+/* 气泡 */
+.bubble[data-v-5a559478] {
+  padding: 10px 14px;
+  border-radius: 16px;
+  line-height: 1.5;
+  font-size: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  word-break: break-word;
+}
+.bubble.me[data-v-5a559478] {
+  background: #95ec69;
+}
+.bubble.them[data-v-5a559478] {
+  background: #ffffff;
+}
+
+/* 图片消息 */
+.msg-image[data-v-5a559478] {
+  width: 180px;
+  height: 130px;
+  border-radius: 12px;
+}
+
+/* 语音消息 */
+.audioBox[data-v-5a559478] {
+  background: #ffffff;
+  padding: 8px 14px;
+  border-radius: 16px;
+  color: #3c9cff;
+  font-size: 14px;
+}
+
+/* 时间 */
+.time[data-v-5a559478] {
+  font-size: 11px;
+  color: #a0a0a0;
+  margin-top: 6px;
+}
+
+/* 顶部拨号按钮 */
+.callButtonContainer[data-v-5a559478] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #FFFFFF;
+  border-bottom: 1px solid #ececec;
+  z-index: 1000;
+}
+.callButton[data-v-5a559478] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  color: #007aff;
+  font-size: 16px;
+  font-weight: 500;
+  background: #f8f9fa;
+  margin: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #007aff;
+}
+.callButton[data-v-5a559478]:active {
+  background: #e6f3ff;
+}
+
+/* 输入栏（底部） */
+.inputBar[data-v-5a559478] {
+  padding-top: 60px; /* 为顶部拨号按钮留出空间 */
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  background: #ffffff;
+  border-top: 1px solid #ececec;
+}
+
+/* 左侧按钮 */
+.leftBtns[data-v-5a559478] {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+.iconBtn[data-v-5a559478] {
+  width: 40px;
+  height: 40px;
+  background: #fafafa;
+  border-radius: 10px;
+  margin-right: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+/* 输入框 */
+.input[data-v-5a559478] {
+  flex: 1;
+  height: 40px;
+  padding: 6px 12px;
+  background: #f5f5f5;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+/* 发送按钮 */
+.send[data-v-5a559478] {
+  height: 40px;
+  min-width: 60px;
+  padding: 0 14px;
+  border-radius: 20px;
+  background: #007aff;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Emoji 面板 */
+.emojiPanel[data-v-5a559478] {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 62px;
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 12px 10px;
+}
+.emojiGrid[data-v-5a559478] {
+  display: flex;
+  flex-wrap: wrap;
+}
+.emojiCell[data-v-5a559478] {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
+  border-radius: 10px;
+  margin: 6px;
+  font-size: 22px;
+}
+
+/* 录音覆盖层 */
+.recordingOverlay[data-v-5a559478] {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+.recordingBox[data-v-5a559478] {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.waveformContainer[data-v-5a559478] {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  height: 100px;
+  margin-bottom: 24px;
+}
+.wave[data-v-5a559478] {
+  width: 6px;
+  background: linear-gradient(to top, #007aff, #00d4ff);
+  border-radius: 3px;
+  animation: waveAnimation-5a559478 0.6s ease-in-out infinite;
+}
+.wave1[data-v-5a559478] { animation-delay: 0s;
+}
+.wave2[data-v-5a559478] { animation-delay: 0.1s;
+}
+.wave3[data-v-5a559478] { animation-delay: 0.2s;
+}
+.wave4[data-v-5a559478] { animation-delay: 0.1s;
+}
+.wave5[data-v-5a559478] { animation-delay: 0s;
+}
+@keyframes waveAnimation-5a559478 {
+0%, 100% { height: 20px;
+}
+50% { height: 60px;
+}
+}
+.recordingTime[data-v-5a559478] {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 12px;
+}
+.recordingWarning[data-v-5a559478] {
+  font-size: 14px;
+  color: #ff4d4f;
+  margin-top: 8px;
+}
+
+/* 录音按钮样式 */
+.recordBtn[data-v-5a559478] {
+  transition: all 0.15s ease;
+}
+.recordBtn.pressed[data-v-5a559478] {
+  background: #e0e0e0;
+  transform: scale(0.92);
+}
+.recordBtn.recording[data-v-5a559478] {
+  background: linear-gradient(135deg, #ff4d4f, #ff7a7a);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(255, 77, 79, 0.3);
+  animation: recordingPulse-5a559478 1.2s ease-in-out infinite;
+}
+@keyframes recordingPulse-5a559478 {
+0%, 100% {
+    box-shadow: 0 2px 8px rgba(255, 77, 79, 0.3);
+}
+50% {
+    box-shadow: 0 2px 12px rgba(255, 77, 79, 0.6);
+}
+}
